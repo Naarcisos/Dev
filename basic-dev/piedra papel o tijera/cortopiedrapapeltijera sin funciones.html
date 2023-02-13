@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Piedra, papel o tijera</title>
+        <script>
+            // Definición de Funciones
+            function aleatorio (min, max) {
+                 return Math.floor( Math.random() * (max - min + 1) + min)
+            }
+            // Definición de variables
+            let jugador = 0
+            let pc = aleatorio(1, 3)
+            // Pregunta del sistema
+            jugador = prompt("Escribe: 1 para 🪨piedra✊, 2 🧻para papel🖐️ y 3 para ✂️tijera✌️")            
+            // Condicionales de usuario
+            if(jugador == 1) {
+                alert("Elegiste 🪨piedra✊")
+            } else if(jugador == 2) {
+                alert("Elegiste 🧻para papel🖐️")
+            } else if(jugador == 3) {
+                alert("Elegiste ✂️tijera✌️")
+            } else {
+                alert("Elegiste perder")
+            }
+            // Selección del PC
+            if(pc == 1) {
+                alert("PC elegió 🪨piedra✊")
+            } else if(pc == 2) {
+                alert("PC elegió 🧻para papel🖐️")
+            } else if(pc == 3) {
+                alert("PC elegió ✂️tijera✌️")
+            } else {
+                alert("PC elegió perder")
+            }
+            // Combate
+            if(jugador == pc) {
+                alert("Empate")
+            } else if((jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2))
+            {
+                alert("Mi perro ganó la buena 🪨piedra✊ nunca falla")
+            } else {
+                alert("Mi perro perdió")
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Piedra, papel o tijera</h1>
+
+    </body>
+</html>

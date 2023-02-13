@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pico y placa</title>
+    </head>
+    <body>
+        <h1>Pico y placa en Bogotá</h1>
+<script>
+    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+    var f = new Date();
+    var d = f.getDay();
+    var m = f.getMonth();
+    var y = f.getFullYear();
+    var resultado;
+    var n = 2;
+
+    if(diasSemana[d]= ("Sábado"))
+    {
+        document.write( "Hoy " + diasSemana[d] + ", " + f.getDate() + " de " + meses[m] + " de " + y + " los carros particulares no tienen pico y placa en bogotá");   
+    }
+    else{
+
+        if (n % 2 == 0)
+        {
+        resultado = "2 - 4 - 6 - 8 - 0";
+        document.write( "Así queda el pico y placa en Bogotá hoy " + diasSemana[d] + ", " + f.getDate() + " de " + meses[m] + " de " + y +  " es para las placas que terminan en " + resultado + " recuerde que está restricción de pico y placa en Bogotá para particulares va de 6:00 a.m. a 9 p.m.");
+        }  
+        else {
+        resultado = "1 - 3 - 5 - 7 - 9";
+        document.write( "Así queda el pico y placa en Bogotá hoy " + diasSemana[d] + ", " + f.getDate() + " de " + meses[m] + " de " + y +  " es para las placas que terminan en " + resultado + " recuerde que está restricción de pico y placa en Bogotá para particulares va de 6:00 a.m. a 9 p.m.");
+        }
+    }
+</script>
+
+    </body>
+
+</html>
+
+
